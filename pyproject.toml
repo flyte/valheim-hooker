@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "valheim-hooker"
+version = "0.1.0"
+description = ""
+authors = ["Ellis Percival <valheim-hooker@failcode.co.uk>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+asyncio-mqtt = {git = "https://github.com/sbtinstruments/asyncio-mqtt.git", rev = "master"}
+click = "^7.1.2"
+httpx = "^0.17.0"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.7.2"
+mypy = "^0.812"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
