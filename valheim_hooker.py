@@ -148,7 +148,7 @@ async def async_main(
 
 
 @click.command()
-@click.argument("mqtt-host")
+@click.option("-h", "--mqtt-host")
 @click.option("-p", "--mqtt-port", type=int, default=1883)
 @click.option("-u", "--mqtt-user", type=str, default=None)
 @click.option("-P", "--mqtt-password", type=str, default=None)
